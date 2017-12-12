@@ -52,7 +52,7 @@ class AppTask(unittest.TestCase):
             print('进入首页时的弹窗已关闭')
             driver.find_elements_by_id('com.jd.jrapp:id/tv_tab_strip')[1].click() #点击顶部白条按钮
             time.sleep(1)
-            '''这里在做一次弹窗的判断，因为弹窗不一定只出现在主页'''
+            #这里再做一次弹窗的判断，使用过程中发现这里也有弹窗
             cancel1 = driver.page_source.find('com.jd.jrapp:id/ibtn_zc_product_notice_board_close')
             if cancel1 == -1:
                 driver.find_element_by_id('com.jd.jrapp:id/tv_mid_text').click() #点击白条资产卡片
@@ -107,7 +107,7 @@ class AppTask(unittest.TestCase):
         self.assertIn('已签', driver.page_source,msg='任务有失败，请到截图目录查看截图'+str(screenshot_path))
 
 
-    def test_0a02_jd_app(self):
+    def test_002_jd_app(self):
         '''京东APP签到领京豆'''
         # ----------启动应用----------
         AppTask.basic('com.jingdong.app.mall', '.main.MainActivity')
