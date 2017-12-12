@@ -59,12 +59,12 @@ Appium-Python-Client (0.24)<br>
 直接运行上面run.py文件就可以开始任务，但是要添加到Windows计划任务定时运行的话需要修改一些地方。
 
 ##### 配置计划任务
-1.在Python安装目录，找到python.exe复制到项目主目录的daily_task文件夹下。
+1.在Python安装目录，找到python.exe复制到项目根目录下。
 
 2.在计划任务的操作栏做如下修改
 - "程序或脚本(P)" 填写`python.exe`
 - "添加参数(可选)"填写`run.py`的绝对路径
-- "起始于(可选)"填写上一步复制到`daily_task`目录下的`python.exe`的绝对路径，只写到目录，不包括python.exe
+- "起始于(可选)"填写上一步复制到项目根目录下的`python.exe`的绝对路径，只写到目录，不包括python.exe
 
 ##### 修改路径
 把run.py文件中的test_path和report_path变量的相对路径改成局对路径。
