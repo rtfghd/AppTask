@@ -2,7 +2,6 @@
 JDK (1.8.0_91)<br>
 SDK (25.1.7)<br>
 python 3<br>
-node.js (6.11.0)<br>
 appium server (1.4.16)<br>
 Appium-Python-Client (0.24)<br>
 雷电安卓模拟器（安卓5.1.1，720*1280）
