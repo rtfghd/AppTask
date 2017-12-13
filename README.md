@@ -67,5 +67,5 @@ Appium-Python-Client (0.24)<br>
 
 ##### 修改路径
 把run.py文件中的test_path和report_path变量的相对路径改成局对路径。
-
+![](http://otlbf411d.bkt.clouddn.com/17-12-13/48294172.jpg)
 ---
