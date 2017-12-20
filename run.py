@@ -61,8 +61,8 @@ def send_mail():
         # ----------登录并发送----------
         try:
             smtp = smtplib.SMTP_SSL('smtp.qq.com', 465)  # QQ邮箱发送服务器以及端口，SMTP默认端口是25，这里改成465
-            smtp.login('691849609@qq.com', 'ukhpaxxwrngrbfei')  # 如果是QQ邮箱的话，第二个参数不是直接用的密码，用的是QQ邮箱的授权码
-            smtp.sendmail('691849609@qq.com', '691849609@qq.com', msg.as_string())  # 前两个参数分别是发送邮箱和接收邮箱
+            smtp.login('123456789@qq.com', '********')  # 如果是QQ邮箱的话，第二个参数不是直接用的密码，用的是QQ邮箱的授权码
+            smtp.sendmail('123456789@qq.com', '123456789@qq.com', msg.as_string())  # 前两个参数分别是发送邮箱和接收邮箱
             smtp.quit()
             print('邮件发送成功')
         except smtplib.SMTPException as e:
